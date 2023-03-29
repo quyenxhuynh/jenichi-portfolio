@@ -91,10 +91,11 @@ a:hover {
 
     /* background-color: pink; */
     justify-content: center;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    /* display: flex;
+    flex-flow: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
 
     row-gap: 1em;
 }
@@ -160,13 +161,20 @@ a:hover {
 }
 
 .footer {
+    
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    /* grid-template-rows: 1fr 1fr; */
+    /* grid-template-columns: 1fr 1fr;
+    row-gap: 1em; */
+
+    max-width: 800px;
+
+    /* background-color: blue;
+    flex-grow: 1; */
 
     
     /* max-width: 800px; */
-    background-color: blue;
     /* justify-content: center; */
 
     /* flex: 0 1 auto; */
@@ -176,7 +184,8 @@ a:hover {
 
 }
 
-.footer > * {
-    /* flex-basis: 100%; */
-    /* justify-content: center; */
-  }
+.social-medias {
+    display: flex;
+    flex-direction: row;
+    column-gap: .5em;
+}
