@@ -15,7 +15,18 @@
     src:url("./fonts/BPreplayBold.otf") format("opentype");
 }
 
-h1 {
+html[data-theme="light"] {
+    --background-color: white;
+    --text-color: rgb(57, 57, 57);
+}
+
+* {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+}
+
+/* h1 {
     font-family: "Kelvinch-Bold", serif;
     font-size: 72px;
 }
@@ -28,4 +39,153 @@ h2 {
 
 body {
     text-align: center;
+} */
+
+/* a, ul, ol {
+    all: unset;
+} */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* .mobile-navigation {
+    color: purple;
+} */
+
+a:hover {
+    color: pink;
+}
+
+/* .hide {
+    display: none;
+} */
+
+.mobile-navbar {
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem 0 ;
+    /* border-bottom:  1px black solid; */
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;     */
+}
+
+.logo {
+    font-family: "Kelvinch-Bold", serif;
+    font-size: 36px;
+}
+
+.toggle-icon img {
+    justify-self: end;
+}
+
+.content {
+    padding: 1rem 2rem;
+    /* background-color: aliceblue; */
+
+    /* background-color: pink; */
+    justify-content: center;
+    display: grid;
+    /* display: flex;
+    flex-flow: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+
+    row-gap: 1em;
+}
+
+.case-studies {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: auto;
+    row-gap: 1em;
+
+    max-width: 800px;
+
+    /* background-color: aliceblue; */
+    /* align-items: center; */
+    /* text-align: center; */
+    /* column-gap: 1em; */
+}
+
+.card {
+    border: 1px solid black;
+    /* display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 1fr; */
+}
+
+.card-image {
+    background-color: gray;
+    height: 20rem;
+    width: 100%;
+}
+
+.card-content {
+    margin: 1em;
+    /* padding: 1em; */
+}
+
+.card-header {
+    font-family: 'BPreplayBold';
+    letter-spacing: 0.1em;
+    font-size: larger;
+}
+
+.card-description {
+    font-family: Arial, sans-serif;
+    margin: 1em 0;
+}
+
+.card-tags {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    gap: .5em;
+
+    /* align-self: flex-end; */
+}
+
+.card-tag {
+    border: 1px solid black;
+    padding: .5em;
+    border-radius: 1em;
+    font-size: small;
+    /* margin: .5em; */
+}
+
+.footer {
+    
+    display: flex;
+    justify-content: space-between;
+    /* grid-template-rows: 1fr 1fr; */
+    /* grid-template-columns: 1fr 1fr;
+    row-gap: 1em; */
+
+    max-width: 800px;
+
+    /* background-color: blue;
+    flex-grow: 1; */
+
+    
+    /* max-width: 800px; */
+    /* justify-content: center; */
+
+    /* flex: 0 1 auto; */
+    /* flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto; */
+
+}
+
+.social-medias {
+    display: flex;
+    flex-direction: row;
+    column-gap: .5em;
 }
